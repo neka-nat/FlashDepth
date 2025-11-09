@@ -6,6 +6,13 @@
 This repository contains the official implementation of <br>
 **FlashDepth: Real-time Streaming Video Depth Estimation at 2K Resolution (ICCV 2025 Highlight)** 
 
+## WebCam Demo
+
+```bash
+uv sync
+uv run python webcam_inference.py --config-path configs/flashdepth --checkpoint configs/flashdepth/iter_43002.pth --device cuda
+```
+
 ## Installation
 We recommend creating a [conda](https://www.anaconda.com/) environment then installing the required packages using our `setup_env.sh` script. Note that the mamba package should be installed from our local folder and the torch version should be 2.4 (as of early May 2025, Mamba2 does not work if compiling torch 2.5 and above).
 
